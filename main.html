@@ -1,8 +1,86 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <title>SUBG3N3R0</title>
+        <title>Document</title>
+	<style>
+	 body {
+	     background-color: rgba(90, 200,250, 0.5);
+	     overflow: hidden;
+	     width: 100%;
+	     height: 100%;
+	     
+	 }
+	 div {
+	     font: 8em monospace;
+	     justify-self: center;
+	     background-color: yellow;
+	 }
+	 
+	 .letraese {
+	     grid-area: letraese;
+	     width: 50px;
+	     height: 50px;
+	 }
+	 .letrau {
+	     grid-area: letrau;
+	     width: 50px;
+	     height: 50px;
+	 }
+	 .letrabe {
+	     grid-area: letrabe;
+	     width: 50px;
+	     height: 50px;
+	 }
+	 .letrage {
+	     grid-area: letrage;
+	     width: 50px;
+	     height: 50px;
+	 }
+	 .letrae {
+	     grid-area: letrae;
+	     width: 50px;
+	     height: 50px;
+	 }
+	 .letraene {
+	     grid-area: letraene;
+	     width: 50px;
+	     height: 50px;
+	 }
+	 .letraedos {
+	     grid-area: letraedos;
+	     width: 50px;
+	     height: 50px;
+	 }
+	 .letraere {
+	     grid-area: letraere;
+	     width: 50px;
+	     height: 50px;
+	 }
+	 .letrao {
+	     grid-area: letrao;
+	     width: 50px;
+	     height: 50px;
+	 }
+	 .grid {
+	     transition: all 2s ease-in-out 0s; 
+	     display: grid;
+	     grid-template-columns: repeat(11, 1fr);
+	     grid-template-rows: repeat(3, 150px);
+	     grid-template-areas:
+	     ". . . . . . . . . . ."
+	     ". letraese letrau letrabe letrage letrae letraene letraedos letraere letrao ."
+	     ". . . . . . . . . . .";
+	 }
+	 div:hover:nth-child(odd) {
+	     background-color: white;
+	     transform: scale(2) ;
+	 }
+	 div:hover:nth-child(even) {
+	     background-color: rgba(128, 0, 0, 1);
+	     transform: scale(2.5);
+	 }
+	</style>
     </head>
     <body>
       <div class="main">
@@ -13,5 +91,16 @@
 	<div></div>
 	<div></div>
       </div>
+    <body class="grid">
+	<div class="letraese">S</div>
+	<div class="letrau">U</div>
+	<div class="letrabe">&beta;</div>
+	<div class="letrage">G</div>
+	<div class="letrae">É</div>
+	<div class="letraene">П</div>
+	<div class="letraedos">E</div>
+	<div class="letraere">Я</div>
+	<div class="letrao" title="">O</div>
+	<!-- <a href="">S</a><a href="">U</a><a href="">&Beta;</a><a href="">G</a><a href="">É</a><a href="">&Pi;</a><a href="">E</a><a href="">Я</a><a href="" title="Inicio">O</a> -->
     </body>
 </html>
